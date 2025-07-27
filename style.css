@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030403;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center; /* <- centraliza o .slogan */
+  padding: 5vh 2rem;
+  overflow-x: hidden;
+}
+
+.borda {
+  width: 100vw;
+  border-bottom: solid 1px #fff;
+}
+
+a {
+  color: #0000;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10vw;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 15px;
+}
+
+.slogan h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  flex: 1 1 300px;
+  min-width: 250px;
+  margin-bottom: 5px;
+}
+
+.slogan p {
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin-bottom: 10px;
+}
+
+.slogan img {
+  max-height: 55vmin;
+  width: auto;
+  flex: 1 1 300px;
+  min-width: 250px;
+  object-fit: contain;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .slogan {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slogan h2 {
+    text-align: center;
+  }
+}
+
+/* From Uiverse.io by McHaXYT */ 
+.buttonbuy {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: #71C10B;
+  color: #151515;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.buttonbuy:hover {
+  transform: translateY(-3px);
+}
+
+.focusbutton {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* <- isso resolve o desalinhamento */
+  flex: 1;
+}
+
+/* From Uiverse.io by Cornerstone-04 */ 
+.focusbutton button {
+  position: relative;
+  background: none;
+  border: solid 1px #71C10B;
+  transition: linear 250ms;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #71C10B;
+}
+
+.propri {
+  display: flex;
+  align-items: stretch; /* <- isso estica os blocos */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 25px;
+}
+
+.propri h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(1.17rem, 3.5vw, 1.5rem);
+  max-width: 150px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.propri img {
+  height: 40px;
+}
+
+.propri p {
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 150px;
+}
+
+.focus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribui conteúdo verticalmente */
+  border: solid 1px #fff;
+  width: 250px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.comentario {
+  display: flex;
+  align-items: stretch; /* <- isso estica os blocos */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 25px;
+}
+
+.comentario cite {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(2em, 5vw, 1.5em);
+  flex: 1 1 300px;
+  min-width: 250px;
+  margin-bottom: 5px;
+}
+
+.lucasm {
+  border: solid 1px #fff;
+  padding: 20px;
+}
+
+.lucasm p {
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  text-align: left;
+  max-width: 150px;
+  margin-top: 5px;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(106, 219, 31);
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.178);
+  width: 100%;
+  height: 35px;
+  line-height: 50 px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer p {
+  padding: 7.5px;
+}
